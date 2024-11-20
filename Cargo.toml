@@ -1,0 +1,9 @@
+[package]
+name = "spelling"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+encoding = "0.2.33"
+hunspell-rs = "0.4.0"
+hunspell-sys = "0.3.1"
