@@ -20,11 +20,11 @@ fn check_binding(word: &str) -> bool {
 }
 
 fn main() {
-    let words = vec!["Öl", "Baum"];
-    println!("{:>8} {:<8} {:<8}", "word", "binding", "with_encoding");
+    let words = vec!["Öl", "Baum", "Käse", "Motorrad", "Tippfheler"];
+    println!("{:>10} {:<8} {:<8}", "word", "binding", "with_encoding");
     for word in words {
         let result_binding = check_binding(word);
         let result_encoded = unsafe { check_with_encoding(word) };
-        println!("{word:>8} {result_binding:<8} {result_encoded:<8}")
+        println!("{word:>10} {result_binding:<8} {result_encoded:<8}")
     }
 }
